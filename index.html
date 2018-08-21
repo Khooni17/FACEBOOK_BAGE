@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<script>
+		function sendLink(event) {
+			event.preventDefault();
+			var text = $("#text").val();
+
+			const url = 'http://example.com/A:\\Проекты\\Парсеры\\facebook_bage\\server.py'; 
+			$.ajax({
+	            url: url,
+	            type: "GET",
+	            crossDomain: true,	        
+	            success: function (response) {
+	                alert(response);
+	            },
+	            error: function (xhr, status) {
+	                alert(status);
+	            }
+		    })
+		}
+</script> -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<title>Instargram Parser</title>
+</head>
+<body>
+
+<div style="width: 20%; margin: 20vh auto" class="container">
+	<h2 style="text-align: center">Введите ссылку</h2>
+	<form style="display: flex; flex-direction: row; margin: 10vh 0" action="http://127.0.0.1:5000/"  method='GET'>
+		<input class="form-control" type="text" name="text" id="text">
+		<input class="btn btn-primary" type="submit" value="GO!">
+	</form>
+</div>
+
+</body>
+</html>
